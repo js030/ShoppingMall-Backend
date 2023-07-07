@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script
+            src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"></script>
+    <title>홈페이지</title>
+
+<!--    <script>-->
+<!--        function login(){-->
+<!--            let memberId = $.get("#memberId").val()-->
+<!--            let memberPassword = $.get("#memberPassword").val()-->
+
+<!--            console.log(memberId)-->
+<!--            console.log(memberPassword)-->
+
+<!--            $.ajax({-->
+<!--                url: "http://localhost:8081/login",-->
+<!--                type: "POST",-->
+<!--                contentType: "application/json",-->
+<!--                data: JSON.stringify({"memberId": memberId,-->
+<!--                "password": memberPassword}),-->
+<!--                success: function (response) {-->
+<!--                    let grantType = response["grantType"]-->
+<!--                    let accessToken = response["accessToken"]-->
+<!--                    let refreshToken = response["refreshToken"]-->
+<!--                }-->
+<!--            })-->
+<!--        }-->
+<!--    </script>-->
+</head>
+<body>
+<form method="post" action="/login">
+    <label for="memberId">아이디: </label>
+    <input id="memberId" name="memberId" type="text">
+    <label for="memberPassword">비밀번호</label>
+    <input name="password" id="memberPassword" type="text">
+    <button type="submit">로그인</button>
+</form>
+
+</body>
+</html>

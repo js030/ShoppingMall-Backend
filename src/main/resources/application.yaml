@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shoppingmall?
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  mvc:
+    view:
+      suffix: .html
+
+  security:
+    user:
+      name: root
+      password: root
+
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.hibernate.sql: debug
+    org.hibernate.type: trace
+
+file:
+  dir: "C:/Users/ruagh/uploadedImage/"
+
+jwt:
+  secret: a22afc8a960c7c8acb0c2d786300aea5803c8b7344b0742e8a424d188201e982dd92113d7bda0791e5e2fee7adca8063ef46d0d11918ebd95e01c7526e8c3cd2
